@@ -1,0 +1,135 @@
+:root{
+    --cor-principal: #FFFFFF;
+    --cor-secundaria: #C0C0C0;
+    --cor-do-botao: #167BF7;
+    --cor-do-fundo: #00030C;
+    --botao-efeito: #3e91f7;
+}
+
+.principal{
+    background-image: url(../img/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container_botao{
+    background-color: var(--cor-do-botao);
+    border-radius: 6px;
+    padding: 1em;
+    color: var(--cor-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao_secundario{
+    background-color: transparent;
+    border: 2px solid var(--cor-principal);
+}
+
+.container_aviso{
+    font-size: 12px;
+    color: var(--cor-secundaria);
+}
+
+.container_titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container_imagem{
+    margin: 1em 0 2em 0;
+}
+
+.container_caixa{
+    margin: 0 6em;
+}
+
+.secundario_imagem{
+    width: 80%;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao_titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--cor-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao_texto{
+    color: var(--cor-secundaria);
+}
+
+.botaozinho{
+    display: inline-block;
+    margin-top: 0.7em;
+}
+
+.container_descricao{
+    padding: 2em;
+}
+
+.dispositivos_lista{
+    display: flex;
+    justify-content: center;
+    margin: 5em 0;
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos_titulo{
+    font-size: 48px;
+    color: var(--cor-principal);
+    
+}
+
+.rodape{
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape_lista{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.lista_link a{
+    text-decoration: none;
+    color: var(--cor-principal);
+    margin-left: 1em;
+}
+
+.rodape_texto{
+    margin: 1em 0;
+    font-size: 14px;
+    color: var(--cor-secundaria);
+}
+
+.lista_link a:hover{
+    color: var(--cor-do-botao);
+}
+
+.lista_link a:active{
+    color: purple;
+}
+
+.container_botao:hover{
+    background-color: var(--botao-efeito);
+    color: var(--cor-do-fundo);
+}
